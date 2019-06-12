@@ -63,45 +63,71 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
 .container {
-	max-width: 876px;
+  	width: 880px;
 	margin: 0 auto;
-	
 }
 
-.container header nav a {
-	padding: 0 20px;
-	color: grey;
-	margin-bottom: 20px
+header {
+	display: flex;
+	justify-content: flex-start space-between;
+	flex-wrap: wrap;
 }
 
-.container header nav img.logo {
-	top: 20%;
-	transform: translateY(30%);
-	padding-left: 100px;
+.services-header-img{
+	padding: 30px 0;
 }
 
-#innovate  {
-	padding: 55px 50px 0 50px;
+header nav {
+	width: 691px;
+	vertical-align: top;
+	margin-top: 35px;
 }
 
-#innovate h1 {
-	font-size: 70px;
+header nav a {
+	margin-right: 65px;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+}
+
+header nav a:hover {
+  	text-decoration: underline;
+}
+
+header nav a:first-child {
+  	margin-left: 0;
+}
+
+header nav a:last-child {
+  	margin-right: 0;
+}
+
+header .logo {
+  	margin-top: 25px;
+}
+
+.cta {
+  	display: flex;
+}
+
+.cta .cta-text {
+	vertical-align: top;
+	font-size: 77px;
+	margin-top: 120px;
 	text-align: center;
-	width: 300px;
-	display: inline-block;
-	margin-bottom: 150px;
+	padding: 0px 75px;
 }
 
-#innovate button {
-	padding: 20px;
-	text-align: center;
-	width: 200px;
-	margin: 10px;
-	border: 1px solid black;
+.cta .cta-text button {
 	background: white;
-	animation: slidein 3s ease-in 1s both running;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 15px;
+	border: 1px solid black;
+	cursor: pointer;
+	animation: slidein 2s ease-in 1s both running;
 }
 
 @keyframes slidein {
@@ -116,63 +142,192 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
-img.round {
-	padding-left: 93px
+.cta .cta-text button:hover {
+	background: black;
+	color: white;
 }
 
-.info {
+.cta img {
+	display: inline-block;
+	margin-top: 69px;
+}
+
+.main-content {
 	border-top: 1px solid black;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	margin-top: 76px;
+	padding-top: 39px;
 }
 
-.info2 {
-	border-bottom: 1px solid black;
-	padding-top: 20px;
-	padding-bottom: 40px;
+.main-content .top-content {
+	padding: 0 10px;
+	display: flex;
 }
 
-
-.info #features {
-	display: inline-block;
-	width: 436px;
+.main-content .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
 }
 
-.info #about {
-	display: inline-block;
-	width: 436px;
+.main-content .top-content .text-content:last-child {
+	margin-right: 0;
 }
 
-.info2 #services {
-	display: inline-block;
-	width: 289px;
-	
+.main-content .middle-img {
+  	margin-top: 45px;
 }
 
-.info2 #product {
-	display: inline-block;
-	width: 289px;
-	
+.main-content .bottom-content {
+	margin-top: 37px;
+	padding: 0 10px;
+	display: flex;
 }
 
-.info2 #vision {
-	display: inline-block;
-	width: 289px;
-	
+.main-content .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  	margin-right: 0;
+}
+
+.contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+}
+
+.contact p {
+  	margin: 20px 0;
 }
 
 footer {
-	padding: 40px 0;
-}
-
-footer address{
-	padding: 0px 0px 10px 0px
-}
-
-footer #email {
-	padding: 10px 0px 10px 0px
-}
-
-.copyright {
+	margin: 32px 0;
 	text-align: center;
+	font-size: 14px;
+}
+
+.toppage {
+	padding-bottom: 30px;
+	border-bottom: solid 2px black;
+}
+
+.toppage h1 {
+	font-size: 30px;
+}
+
+.midpage{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-bottom: 2px solid black;
+	box-sizing: content-box;
+}
+.midpage button{
+	padding: 5px;
+	border-radius: 8px;
+	background: white;
+	margin: 10px;
+}
+
+.midpage button:hover{
+	background: gray;
+	color: white;
+}
+.midpage div {
+	margin: 20px 0;
+	width: 400px;
+	padding: 10px;
+	border: 1px solid black;
+	background: lightgray;
+}
+
+.bottompage {
+	padding: 30px 0;
+	display: flex;
+}
+
+.bottompage p {
+	padding: 20px 40px 20px 0;
+}
+
+ul {
+	margin-left: 20px;
+	list-style-type: square; 
+}
+
+li {
+	padding: 4px 0;
+}
+
+.actualcontacts section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0 20px 20px;
+	border: 1px solid black;
+	background: lightgray;
+}
+
+.actualcontacts h1{
+	border-bottom: 2px solid black;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+.actualcontacts div {
+	width: 400px;
+	margin: 10px;
+	border: 1px double black;
+	border-radius: 8px;
+}
+
+.actualcontacts img{
+	border-radius: 12px;
+}
+
+.text {
+	padding: 70px 0;
+	text-align: center;
+}
+
+.text button{
+	margin: 25px;
+	position: relative;
+	background-color: gray;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.text button:after {
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+
+.text button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+}
+
+#workstation {
+	margin-top: 20px;
+	width: 880px;
+	padding-top: 30px;
+	padding-left: 350px;
+	border: black solid 2px;
 }
