@@ -92,6 +92,19 @@ header {
 	flex-wrap: wrap;
 }
 
+@media(max-width: 800px){
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+} 
+@media(max-width: 500px){
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
 .services-header-img{
 	padding: 30px 0;
 }
@@ -106,24 +119,23 @@ header nav {
    header nav {
        display: flex;
        width: 100%;
-	   align-items: center;
 	   flex-direction: column;
-	   margin: 0 auto;
+	   margin-top: 0;
    }
 }
 
 header nav a {
 	margin-right: 65px;
+	justify-content: space-between;
 	font-size: 14px;
 	color: gray;
 	text-decoration: none;
 	
 }
-
 @media(max-width: 500px){
     header nav a {
-		padding: 20px 200px;
-		margin: 0 auto;
+		line-height: 70px;
+		text-align: center;
 		border-bottom: 1px solid grey;
 		font-size: 20px;
 		width: 100%;
@@ -146,18 +158,6 @@ header .logo {
   	margin-top: 25px;
 }
 
-@media(max-width: 800px){
-    header{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-} 
-@media(max-width: 500px){
-    header{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-}
 .cta {
   	display: flex;
 }
