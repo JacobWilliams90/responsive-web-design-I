@@ -79,7 +79,11 @@ h1, h2, h3, h4, h5 {
 @media(max-width: 500px){
     .middle-img{
         width: 100%;
-    }
+	}
+	.logo{
+		border-bottom: 1px solid grey;
+		padding: 20px 139px;
+	}
 }
 
 header {
@@ -201,11 +205,11 @@ header .logo {
 
 @media(max-width: 800px){
     .cta {
-        justify-content: center;
+		justify-content: center;
     }
     .cta img {
         display: none;
-    }
+	}
 }
 
 .main-content {
@@ -213,7 +217,17 @@ header .logo {
 	margin-top: 76px;
 	padding-top: 39px;
 }
-
+@media(max-width: 500px){
+	.main-content .top-content{
+		flex-direction: column;
+	}
+	.main-content .text-content{
+		padding: 20px 0;
+	}
+	.main-content .bottom-content{
+		flex-direction: column;
+	}
+}
 .main-content .top-content {
 	padding: 0 10px;
 	display: flex;
@@ -239,7 +253,6 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-	width: 275px;
 	margin-right: 12px;
 }
 
