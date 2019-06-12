@@ -101,9 +101,10 @@ header nav {
 @media(max-width: 500px){
    header nav {
        display: flex;
-       flex-direction: column;
-       width: 50%;
-       align-items: center;
+       width: 100%;
+	   align-items: center;
+	   flex-direction: column;
+	   margin: 0 auto;
    }
 }
 
@@ -112,12 +113,19 @@ header nav a {
 	font-size: 14px;
 	color: gray;
 	text-decoration: none;
+	
 }
+
 @media(max-width: 500px){
-    header a {
-        border: 1px solid black;
+    header nav a {
+		padding: 20px 200px;
+		margin: 0 auto;
+		border-bottom: 1px solid grey;
+		font-size: 20px;
+		width: 100%;
     }
 }
+
 header nav a:hover {
   	text-decoration: underline;
 }
