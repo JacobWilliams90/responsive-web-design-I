@@ -67,7 +67,14 @@ h1, h2, h3, h4, h5 {
   	width: 880px;
 	margin: 0 auto;
 }
-
+@media(max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    .middle-img{
+        width: 100%;
+    }
+}
 header {
 	display: flex;
 	justify-content: flex-start space-between;
@@ -106,6 +113,13 @@ header nav a:last-child {
 header .logo {
   	margin-top: 25px;
 }
+
+@media(max-width: 800px){
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+} 
 
 .cta {
   	display: flex;
@@ -150,6 +164,15 @@ header .logo {
 .cta img {
 	display: inline-block;
 	margin-top: 69px;
+}
+
+@media(max-width: 800px){
+    .cta {
+        justify-content: center;
+    }
+    .cta img {
+        display: none;
+    }
 }
 
 .main-content {
